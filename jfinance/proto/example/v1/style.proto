@@ -268,6 +268,14 @@ message StreamQuasarsResponse {
   repeated Quasar quasars = 1;
 }
 
+message GreetingRequest {
+  string name = 1;
+}
+
+message GreetingResponse {
+  string greeting = 1;
+}
+
 // Services should end in Service.
 // Use ; to terminate the method definition if there are no RPC options,
 // {} if there are RPC options.
@@ -277,6 +285,7 @@ service HelloService {
   // Requests and Responses should always match the rpc name.
   // rpc NAME(NAMERequest) returns (NAMEResponse);
 
+
   // SendFoo sends a foo.
   rpc SendFoo(SendFooRequest) returns (SendFooResponse);
   // GetPlanet gets a planet.
@@ -285,4 +294,8 @@ service HelloService {
   rpc StreamGalaxies(StreamGalaxiesRequest) returns (stream StreamGalaxiesResponse);
   // StreamQuasars streams quasars.
   rpc StreamQuasars(stream StreamQuasarsRequest) returns (StreamQuasarsResponse);
+}
+
+service GreetingService {
+  rpc Greeting(GreetingRequest) returns (GreetingResponse);
 }
