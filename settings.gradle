@@ -10,5 +10,4 @@
 rootProject.name = 'proto-library'
 include 'proto-library'
 include 'jfinance-java-api'
-findProject(':jfinance-java-api')?.name = 'java-rpc-library'
 
