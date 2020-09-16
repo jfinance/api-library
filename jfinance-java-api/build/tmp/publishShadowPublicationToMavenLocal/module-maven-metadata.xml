@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>jfinance.api</groupId>
+  <artifactId>jfinance-java-api</artifactId>
+  <versioning>
+    <latest>1.0-SNAPSHOT</latest>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20200916122743</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package jfinance.proto.example.dep.v1;
+
+option go_package = "deppb";
+option java_multiple_files = true;
+option java_outer_classname = "DepProto";
+option java_package = "com.jfinance.proto.example.dep.v1";
+
+// Dep is a dep.
+message Dep {
+  string value = 1;
+  int32 value2 = 2;
+}
